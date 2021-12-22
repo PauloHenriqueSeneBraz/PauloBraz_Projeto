@@ -9,7 +9,6 @@
     <link rel="StyleSheet" href="css/style.css">
 
     <script src="js/comandos.js"></script>
-
 </head>
 
 <body>
@@ -27,28 +26,31 @@
     </div>
 
     <div class="fundo2">
-        <div class="nome">
-            <input type="text" id="nomeid" placeholder="Nome completo" required="required" name="nome" />
-        </div>
+        <form name="form" method="POST" action="contato.html">
 
+            <div class="nome">
+                <p class="txtNome">Nome completo</p>
+                <input type="text" name="nome" placeholder="Digite seu Nome">
+            </div>
 
-        <div class="email">
-            <input type="email" id="emailid" placeholder="Seu email" name="email" />
+            <div class="email">
+                <p class="txtEmail">Email</p>
+                <input type="email" name="email" placeholder="Digite seu Email">
 
-        </div>
+            </div>
 
+            <div class="mensagem">
+                <p class="txtMensagem">Mensagem</p>
+                <textarea name="mensagem" cols="40" rows="10" placeholder="Digite sua Mensagem"></textarea></br>
+            </div>
 
-        <div class="mensagem">
-            <textarea name="Mensagem" id="mensagemid" placeholder="Mensagem" cols="60" rows="10" style="margin: 0px; height: 169px; width: 315px;"></textarea>
-        </div>
+            <footer class="envio">
+                <button class="enviar" onclick="return validarform()">ENVIAR</button>
+            </footer>
 
-        <div class="enviar">
-            <button id="home" onclick="enviar()"> ENVIAR</button>
-        </div>
-
+        </form>
     </div>
 
-    </form>
 </body>
 
 </html>
