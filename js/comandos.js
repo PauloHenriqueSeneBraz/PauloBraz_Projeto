@@ -15,7 +15,7 @@ function validarform() {
     var email = form.email.value;
     var mensagem = form.mensagem.value;
 
-    if (nome == "" || nome.indexOf(" ")) {
+    if (nome == "") {
         alert("Digite seu nome corretamente");
         form.nome.focus();
         return false;
